@@ -1,0 +1,136 @@
+body {
+    background-color: rgb(8, 12, 18);
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    position: absolute;
+    z-index: -100;
+    top: 0;
+
+}
+
+.aluraOracle {
+    display: block;
+    margin: 2rem auto 3rem;
+    height: 4rem;
+}
+
+p {
+    text-align: center;
+    text-shadow: 1px 1px 5px rgb(178, 214, 245);
+
+    margin: 1rem auto;
+    color:rgb(255, 255, 255);
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    padding: 5% 2rem;
+
+    border-radius: 2rem;
+
+    background: linear-gradient( rgba(202, 202, 202, 0.068), rgba(95, 78, 194, 0.062), rgba(202, 202, 202, 0.068));
+    backdrop-filter: blur(10px);
+
+    width: 90%;
+    height: fit-content;
+    z-index: 1;
+}
+
+.dataIn {
+    width: 40%;
+}
+
+.dataOut {
+    width: 40%;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+textarea {
+    resize: none;
+    height: 20vh;
+    width: 100%;
+    padding: 0.5rem 1rem;
+
+    background-color: rgba(95, 78, 194, 0);
+    border: none;
+
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#dataOut {
+    transition: 1s all;
+}
+
+#dataOut:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+
+span {
+    width: fit-content;
+    display: inline-block;
+    margin: 1rem auto;
+    font-size: 0.8rem;
+    align-content: center;
+
+    color:rgb(255, 255, 255);
+    background-color: rgb(82, 113, 138);
+
+    border: 0.01rem rgb(122, 122, 122) solid;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    align-content: center;
+
+    transition: 0.5s all;
+}
+
+span:hover {
+    cursor: pointer;
+    background: rgb(138, 130, 82);;
+}
+
+footer {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+a img {
+    width: 3rem;
+    margin: 0 2rem;
+}
+
+@media (max-width: 1219px){
+    form {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .dataIn, .dataOut {
+        width: 100%;
+    }
+    .btns {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
