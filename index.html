@@ -6,32 +6,45 @@
     <title>Challenge ONE Sprint 01</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+    </style>
 </head>
 <body>
     <canvas></canvas>
-    <img src="img/aluraoracle-removebg-previewch1.png" alt="Logos de Alura y Oracle"  class="aluraOracle">
-    <p>Encriptador hecho como parte del Challenge ONE - Sprint 01</p>
-    <form action="">
-        <div class="dataIn">
-            <textarea name="message" id="dataIn" cols="" rows="" placeholder="Tu mensaje acá. Nota: El texto será convertido en su totalidad a letras minúsculas, además si usas acentos o carácteres especiales esos carácteres no se tendrán en cuenta."></textarea>
-        </div>
-        <div class="btns">
-            <span class="btn1" onclick="encrypt()">CODIFICAR</span>
-            <span class="btn2" onclick="decrypt()">DESCODIFICAR</span>
-        </div>
-        <div class="dataOut" onclick="copyText()">
-            <textarea name="message" id="dataOut" cols="30" rows="14" placeholder="Acá el resultado. ¡Toca el texto para copiarlo en el clipboard!" disabled></textarea>
-        </div>
-    </form>
-    <p>Desarrollado por Camilo Andrés Castellanos Herrera</p>
-    <p>Bogotá, Colombia</p>
+    <header>
+        <img src="img/aluraoracle-removebg-previewch1.png" alt="Logos de Alura y Oracle"  class="aluraOracle">
+    </header>
+    <main>
+        <section>
+            <p>Encriptador hecho como parte del Challenge ONE - Sprint 01</p>
+            <form action="">
+                <div class="dataIn">
+                    <textarea name="message" id="dataIn" cols="" rows="" placeholder="Tu mensaje acá. Nota: El texto será convertido en su totalidad a letras minúsculas, además si usas acentos o carácteres especiales esos carácteres no se tendrán en cuenta."></textarea>
+                </div>
+                <div class="btns">
+                    <span class="btn1" onclick="encrypt()">CODIFICAR</span>
+                    <span class="btn2" onclick="decrypt()">DESCODIFICAR</span>
+                </div>
+                <div class="dataOut" onclick="copyText()">
+                    <textarea name="message" id="dataOut" cols="30" rows="14" placeholder="Acá el resultado. ¡Toca el texto para copiarlo en el clipboard!" disabled></textarea>
+                </div>
+            </form>
+        </section>
+    </main>
     <footer>
-        <a href="https://www.linkedin.com/in/camilocastell/" target="_blank">
-            <img src="img/kisspng-linkedin-logo-computer-icons-business-symbol-linkedin-icon-5ab1765660baa8.1191823015215796063962.png" alt="linkedin">
-        </a>
-        <a href="https://github.com/camilo6castell?tab=repositories" target="_blank">
-            <img src="img/229062.png" alt="GitHub">
-        </a>
+        <div>
+            <p>Desarrollado por Camilo Andrés Castellanos Herrera</p>
+            <p>Bogotá, Colombia</p>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/camilocastell/" target="_blank">
+                <img src="img/kisspng-linkedin-logo-computer-icons-business-symbol-linkedin-icon-5ab1765660baa8.1191823015215796063962.png" alt="linkedin">
+            </a>
+            <a href="https://github.com/camilo6castell?tab=repositories" target="_blank">
+                <img src="img/229062.png" alt="GitHub">
+            </a>
+        </div>
     </footer>
     <script src="index.js"></script>
 </body>
